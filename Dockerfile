@@ -6,6 +6,9 @@ FROM node:16.17.0
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+# Install nodemon globally using Yarn
+RUN yarn global add nodemon
+
 # Install Dependencies
 COPY package*.json ./
 RUN yarn
