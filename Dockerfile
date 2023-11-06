@@ -16,4 +16,4 @@ COPY . .
 # Exports
 EXPOSE 3030
 
-CMD ["yarn","start"]
+CMD ["yarn","start","nodemon"]
