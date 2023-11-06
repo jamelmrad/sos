@@ -11,7 +11,7 @@ RUN yarn global add nodemon
 
 # Install Dependencies
 COPY package*.json ./
-RUN yarn
+RUN yarn install
 
 # Copy app source code
 COPY . .
@@ -19,4 +19,4 @@ COPY . .
 # Exports
 EXPOSE 3030
 
-CMD ["yarn","start","nodemon"]
+CMD ["nodemon","app.js"]
